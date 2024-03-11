@@ -35,27 +35,32 @@ ReadKitronyxCsv
 |           Read_ConvertLogFile_1_dimension_data.m
 |           Read_snapshot_1_dimension_data.m
 |
-\---Python
-    +---SampleCode
-    |   |   main.py
-    |   |   ReadKitronyxCsv.py
-    |   |
-    |   +---SampleSnapshotData
-    |   |       20240227T170929_AdcData-1d.csv
-    |   |       20240227T170929_AdcData-2d.csv
-    |   |       20240227T170929_ForceData-1d.csv
-    |   |       20240227T170929_ForceData-2d.csv
-    |   |       20240227T170929_snapshot-frame.jpg
-    |   |       20240227T170929_snapshot-real_time_analyzer.jpg
-    |   |
-    |   \---Sample_ConvertLogFilePage 01
-    |           20240311T142511_AdcData-1d.csv
-    |           20240311T142511_AdcData-2d.csv
-    |           20240311T142511_ForceData-1d.csv
-    |           20240311T142511_ForceData-2d.csv
-    |
-    \---src
-            ReadKitronyxCsv.py
++---Python
+|   +---SampleCode
+|   |   |   main.py
+|   |   |   ReadKitronyxCsv.py
+|   |   |
+|   |   +---SampleSnapshotData
+|   |   |       20240227T170929_AdcData-1d.csv
+|   |   |       20240227T170929_AdcData-2d.csv
+|   |   |       20240227T170929_ForceData-1d.csv
+|   |   |       20240227T170929_ForceData-2d.csv
+|   |   |       20240227T170929_snapshot-frame.jpg
+|   |   |       20240227T170929_snapshot-real_time_analyzer.jpg
+|   |   |
+|   |   +---Sample_ConvertLogFilePage 01
+|   |   |       20240311T142511_AdcData-1d.csv
+|   |   |       20240311T142511_AdcData-2d.csv
+|   |   |       20240311T142511_ForceData-1d.csv
+|   |   |       20240311T142511_ForceData-2d.csv
+|   |   |
+|   |   \---__pycache__
+|   \---src
+|           ReadKitronyxCsv.py
+|
+\---res
+        MatLABSampleResult.png
+        PythonSampleResult.png
 ```
 # Python
 Program tools : Vs Code  

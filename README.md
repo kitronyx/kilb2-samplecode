@@ -63,8 +63,8 @@ ReadKitronyxCsv
         PythonSampleResult.png
 ```
 # Python
-Program tools : Vs Code  
-Version: v2024.2.1  
+Program tools : Vs Code (Vesion 1.87.1)  
+Vs code Python Version: v2024.2.1  
  ## Code Description
  ```
 ReadKitronyxCsv.py

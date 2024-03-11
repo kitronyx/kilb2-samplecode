@@ -7,7 +7,7 @@ disp(data);
 
 % Read 1-dimensional log data.
 [row, col, data_map] = Read_ConvertLogFile_1_dimension_data('Sample_ConvertLogFilePage 01\20240311T142511_AdcData-1d.csv');
-disp(['row: ', num2str(row), ', col: ', num2str(col), ', len: ', num2str(length(data_dict))]);
+disp(['row: ', num2str(row), ', col: ', num2str(col), ', len: ', num2str(length(data_map))]);
 
 % Print all data in the map
 disp('Data in the map:');

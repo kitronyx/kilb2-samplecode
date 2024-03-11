@@ -1,7 +1,7 @@
 # klib2-ReadKitronyxCsv
  GitHub repository for reading Kitronyx snapshot files and log files
 
-# Code Purpos
+# Code Purpose
 Collection of sample code and source code in various programming languages for aggregating data from Snapshot and Log folders' converted CSV files using Kitornyx products
 
 

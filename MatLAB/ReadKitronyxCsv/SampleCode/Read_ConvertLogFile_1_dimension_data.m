@@ -1,4 +1,4 @@
-function [row, col, data_map] = Read_ConvertLogFile_1_dimension_data(path)
+function [row, col, times, data] = Read_ConvertLogFile_1_dimension_data(path)
     try
         % Open the file
         fid = fopen(path, 'r');
@@ -19,29 +19,48 @@ function [row, col, data_map] = Read_ConvertLogFile_1_dimension_data(path)
                 disp('Error: CSV data is incorrect');
                 row = [];
                 col = [];
-                data_map = [];
+                times = {};
+                data = {};
                 return;
             end
         end
 
         % Extract row and column numbers (e.g., R47C47 --> row: 48, col: 48)
         splitStr = strsplit(dimension_info, 'C');
-        row = str2double(strrep(splitStr(1), 'R', '')) + 1;
-        col = str2double(splitStr(2)) + 1;
+        row = str2double(strrep(splitStr{1}, 'R', '')) + 1;
+        col = str2double(splitStr{2}) + 1;
 
-        % Read time value and matrix data, store in map
-        data_map = containers.Map();
+        % Initialize arrays to store time values and corresponding data
+        times = {};
+        data = {};
+        
+        % Read time value and matrix data
         while ~feof(fid)
             line_data = strsplit(fgetl(fid), ',');
-            time_value = line_data{1};
+            time_value = str2double(line_data{1});
             matrix_data = line_data(2:row * col + 1);
-            data_map(time_value) = matrix_data;
+            
+            % Store the time value and corresponding data
+            times{end+1} = time_value;
+            data{end+1} = matrix_data;
         end
         fclose(fid);
+        
+        % Convert times to numeric values for correct sorting
+        numeric_times = cell2mat(times);
+        
+        % Sort the numeric times and get sorted indices
+        [sorted_numeric_times, sort_idx] = sort(numeric_times);
+        
+        % Reorder times and data based on sorted indices
+        times = num2cell(sorted_numeric_times);
+        data = data(sort_idx);
+        
     catch e
         disp(['Error: ', e.message]);
         row = [];
         col = [];
-        data_map = containers.Map();
+        times = {};
+        data = {};
     end
 end

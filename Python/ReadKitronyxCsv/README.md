@@ -8,59 +8,34 @@ Collection of sample code and source code in various programming languages for a
 # FolderTree
 ```
 ReadKitronyxCsv
-|   LICENSE
 |   README.md
+|   README.pdf
 |
-+---MatLAB
-|   +---SampleCode
-|   |   |   main.m
-|   |   |   ReadConvertLogFile1DimensionData.m
-|   |   |   ReadSnapshot1DimensionData.m
-|   |   |
-|   |   +---SampleSnapshotData
-|   |   |       20240227T170929_AdcData-1d.csv
-|   |   |       20240227T170929_AdcData-2d.csv
-|   |   |       20240227T170929_ForceData-1d.csv
-|   |   |       20240227T170929_ForceData-2d.csv
-|   |   |       20240227T170929_snapshot-frame.jpg
-|   |   |       20240227T170929_snapshot-real_time_analyzer.jpg
-|   |   |
-|   |   \---Sample_ConvertLogFilePage 01
-|   |           20240311T142511_AdcData-1d.csv
-|   |           20240311T142511_AdcData-2d.csv
-|   |           20240311T142511_ForceData-1d.csv
-|   |           20240311T142511_ForceData-2d.csv
++---SampleCode
+|   |   main.py
+|   |   ReadKitronyxCsv.py
 |   |
-|   \---src
-|           ReadConvertLogFile1DimensionData.m
-|           ReadSnapshot1DimensionData.m
+|   +---SampleSnapshotData
+|   |       20240227T170929_AdcData-1d.csv
+|   |       20240227T170929_AdcData-2d.csv
+|   |       20240227T170929_ForceData-1d.csv
+|   |       20240227T170929_ForceData-2d.csv
+|   |       20240227T170929_snapshot-frame.jpg
+|   |       20240227T170929_snapshot-real_time_analyzer.jpg
+|   |
+|   +---Sample_ConvertLogFilePage 01
+|   |       20240311T142511_AdcData-1d.csv
+|   |       20240311T142511_AdcData-2d.csv
+|   |       20240311T142511_ForceData-1d.csv
+|   |       20240311T142511_ForceData-2d.csv
+|   |
+|   \---__pycache__
++---src
+|       ReadKitronyxCsv.py
 |
-+---Python
-|   +---SampleCode
-|   |   |   main.py
-|   |   |   ReadKitronyxCsv.py
-|   |   |
-|   |   +---SampleSnapshotData
-|   |   |       20240227T170929_AdcData-1d.csv
-|   |   |       20240227T170929_AdcData-2d.csv
-|   |   |       20240227T170929_ForceData-1d.csv
-|   |   |       20240227T170929_ForceData-2d.csv
-|   |   |       20240227T170929_snapshot-frame.jpg
-|   |   |       20240227T170929_snapshot-real_time_analyzer.jpg
-|   |   |
-|   |   +---Sample_ConvertLogFilePage 01
-|   |   |       20240311T142511_AdcData-1d.csv
-|   |   |       20240311T142511_AdcData-2d.csv
-|   |   |       20240311T142511_ForceData-1d.csv
-|   |   |       20240311T142511_ForceData-2d.csv
-|   |   |
-|   |   \---__pycache__
-|   \---src
-|           ReadKitronyxCsv.py
-|
-\---res
-        MatLABSampleResult.png
-        PythonSampleResult.png
++---res
+|       MatLABSampleResult.png
+|       PythonSampleResult.png
 ```
 # Python
 Program tools : Vs Code (Vesion 1.87.1)  
@@ -89,27 +64,3 @@ ReadKitronyxCsv.py
 ```
 
 ![sample code image](res/PythonSampleResult.png)
-
-
-# MathLAB
-Version: R2023b Update 7 (23.2.0.2515942) 64bit January 30, 2024  
-
-## Code Description
-```
-ReadSnapshot1DimensionData.m
-    - MATLAB file containing a function to read snapshot 1D files
-    - Returns [row, col, data] when given a 1D CSV path as a parameter.
-    - row: ROW - number of columns
-    - col: COL - number of rows
-    - data: Cell array data of size ROW*COL
-
-ReadConvertLogFile1DimensionData.m
-    - MATLAB file containing a function to read log 1D files
-    - Returns [row, col, data_dict] when given a 1D CSV path as a parameter.
-    - row: ROW - number of columns
-    - col: COL - number of rows
-    - data_dict: Map format data
-        - keys: Time values
-        - values: Cell array data of size ROW*COL
-```
-![sample code image](res/MatLABSampleResult.png)

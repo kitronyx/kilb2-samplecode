@@ -1,4 +1,4 @@
-function [row, col, data] = Read_snapshot_1_dimension_data(path)
+function [row, col, data] = ReadSnapshot1DimensionData(path)
     try
         % Open the file
         fid = fopen(path, 'r');

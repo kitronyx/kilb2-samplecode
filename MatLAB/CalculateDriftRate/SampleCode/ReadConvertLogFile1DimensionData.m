@@ -1,4 +1,4 @@
-function [row, col, times, data] = Read_ConvertLogFile_1_dimension_data(path)
+function [row, col, times, data] = ReadConvertLogFile1DimensionData(path)
     try
         % Open the file
         fid = fopen(path, 'r');

@@ -4,39 +4,39 @@ close all;
 
 
 % Read 1-dimensional snapshot data.
-[row, col, data] = Read_snapshot_1_dimension_data('SampleSnapshotData\20240227T170929_AdcData-1d.csv');
+[row, col, data] = ReadSnapshot1DimensionData('SampleSnapshotData\20240227T170929_AdcData-1d.csv');
 
 data = str2double(data);
 
 % calculate sum, max, min, average value of all nodes
-[node_sum, node_max,node_min,node_avg] = calc_node_SumMaxMinAvg(data);
+[nodeSum, nodeMax,nodeMin,nodeAvg] = CalcNodeSumMaxMinAvg(data);
 
 % Sum of all nodes
 disp('sum of all nodes:');
-disp(node_sum);
+disp(nodeSum);
 % max value of all nodes
 disp('max value of all nodes:');
-disp(node_max);
+disp(nodeMax);
 % min value of all nodes
 disp('min value of all nodes:');
-disp(node_min);
+disp(nodeMin);
 % average of all nodes
 disp('average of all nodes:');
-disp(node_avg);
+disp(nodeAvg);
 
 
 % calculate Relative Standard deviation(RSD)
-[node_std, node_rsd] = calc_node_rsd(data);
+[nodeStd, nodeRsd] = CalcNodeRsd(data);
 
 % Standard deviation of all nodes
 disp('Standard deviation of all nodes:');
-disp(node_std);
+disp(nodeStd);
 % Relative Standard deviation(RSD) of all nodes
 disp('%RSD of all nodes:');
-disp(node_rsd);
+disp(nodeRsd);
 
-[node_XRAD] = calc_node_XRAD(data);
+[nodeXrad] = CalcNodeXRAD(data);
 
 % %XRAD of all nodes
 disp('%XRAD of all nodes:');
-disp(node_XRAD);
+disp(nodeXrad);

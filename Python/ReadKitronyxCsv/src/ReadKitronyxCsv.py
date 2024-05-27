@@ -1,9 +1,9 @@
 from asyncio.windows_events import NULL
 import csv
 
-def Read_snapshot_1_dimension_data(path):
+def ReadSnapshot1DimensionData(_path):
     try:
-        with open(path, 'r') as csvfile:
+        with open(_path, 'r') as csvfile:
             csv_reader = csv.reader(csvfile)
             csv_header = next(csv_reader)
             dimension_info = csv_header[-1]
@@ -27,9 +27,9 @@ def Read_snapshot_1_dimension_data(path):
         return None, None, None
 
 
-def Read_ConvertLogFile_1_dimension_data(path):
+def ReadConvertLogFile1DimensionData(_path):
     try:
-        with open(path, 'r') as csvfile:
+        with open(_path, 'r') as csvfile:
             csv_reader = csv.reader(csvfile)
             csv_header = next(csv_reader)
             dimension_info = csv_header[-1]

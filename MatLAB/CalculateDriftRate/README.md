@@ -14,16 +14,17 @@ CalculateDriftRate
 │      MatLABSampleResult.png
 │
 ├─SampleCode
-│  │  calc_drift_rate.m
+│  │  CalcDriftRate.m
 │  │  main.m
-│  │  Read_ConvertLogFile_1_dimension_data.m
+│  │  ReadConvertLogFile1DimensionData.m
 │  │
 │  └─Drift_Sample_ConvertLogFilePage 01
 │          Drift_AdcData-1d.csv
 │          Drift_AdcData-2d.csv
 │
-└─src
-        calc_drift_rate.m
+├─src
+│        CalcDriftRate.m
+│        ReadConvertLogFile1DimensionData.m
 ```
 
 
@@ -32,13 +33,13 @@ Version: R2023b Update 7 (23.2.0.2515942) 64bit January 30, 2024
 
 ## Code Description
 ```
-calc_drift_rate.m
+CalcDriftRate.m
     - MATLAB file containing a function to calculate drift rate for all log data
-    - Returns [drift_rate] when given a drift infomation struct.
+    - Returns [drift_rate, driftInfo] when given a drift value and drift information struct.
     - drift infomation struct format example:
-        - drift_info.Time_start
-        - drift_info.Time_end
-        - drift_info.ADC_begin
-        - drift_info.ADC_end 
+        - driftInfo.timeStart
+        - driftInfo.timeEnd
+        - driftInfo.adcBegin
+        - driftInfo.adcEnd 
 ```
 ![sample code image](res/MatLABSampleResult.png)

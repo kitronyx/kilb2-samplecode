@@ -1,4 +1,4 @@
-function [row, col, data_map] = Read_ConvertLogFile_1_dimension_data(path)
+function [row, col, data] = ReadSnapshot1DimensionData(path)
     try
         % Open the file
         fid = fopen(path, 'r');
@@ -19,7 +19,7 @@ function [row, col, data_map] = Read_ConvertLogFile_1_dimension_data(path)
                 disp('Error: CSV data is incorrect');
                 row = [];
                 col = [];
-                data_map = [];
+                data = [];
                 return;
             end
         end
@@ -29,19 +29,16 @@ function [row, col, data_map] = Read_ConvertLogFile_1_dimension_data(path)
         row = str2double(strrep(splitStr(1), 'R', '')) + 1;
         col = str2double(splitStr(2)) + 1;
 
-        % Read time value and matrix data, store in map
-        data_map = containers.Map();
-        while ~feof(fid)
-            line_data = strsplit(fgetl(fid), ',');
-            time_value = line_data{1};
-            matrix_data = line_data(2:row * col + 1);
-            data_map(time_value) = matrix_data;
-        end
-        fclose(fid);
+
+        % Skip the first data (time value) and return the remaining data
+        data = strsplit(fgetl(fid), ','); % Read the first line and split by ','
+        data = data(2:(row * col + 1)); % Exclude the first node and keep the remaining data
+        fclose(fid); % Close the file
+
     catch e
         disp(['Error: ', e.message]);
         row = [];
         col = [];
-        data_map = containers.Map();
+        data = [];
     end
 end

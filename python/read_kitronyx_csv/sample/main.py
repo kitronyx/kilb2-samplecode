@@ -8,7 +8,7 @@ if __name__ == "__main__":
     print("data: ",data)
 
     # Read 1d Log data
-    (row,col,data_dict) =  klib.ReadConvertLogFile1DimensionData(r"Sample_ConvertLogFilePage 01\20240311T142511_AdcData-1d.csv")
+    (row,col,data_dict) =  klib.ReadConvertedLogFile1DimensionData(r"Sample_ConvertLogFilePage 01\20240311T142511_AdcData-1d.csv")
     print("row: ",row,"col: ",col,"len: ",len(data_dict))    
     for time_value, matrix_data in data_dict.items():
         print(f"Time value: {time_value}, Data: {matrix_data}")

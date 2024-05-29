@@ -27,7 +27,7 @@ def ReadSnapshot1DimensionData(_path):
         return None, None, None
 
 
-def ReadConvertLogFile1DimensionData(_path):
+def ReadConvertedLogFile1DimensionData(_path):
     try:
         with open(_path, 'r') as csvfile:
             csv_reader = csv.reader(csvfile)

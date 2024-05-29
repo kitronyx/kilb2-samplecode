@@ -1,7 +1,7 @@
-function [drfitRate, driftInfo] = CalculateDriftRate(logPath, measuredCol)
+function [drfitRate, driftInfo] = calcualte_drift_rate(logPath, measuredCol)
 
 % Read 1-dimensional log data.
-[row, col, driftLogTimes, driftAdcData] = ReadConvertLogFile1DimensionData(logPath);
+[row, col, driftLogTimes, driftAdcData] = read_converted_logfile_1D_data(logPath);
 
 %struct info
 % driftInfo.timeStart

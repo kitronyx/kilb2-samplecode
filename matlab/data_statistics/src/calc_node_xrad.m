@@ -1,4 +1,4 @@
-function [nodeXrad] = CalcNodeXRAD(snapshotPath)
+function [nodeXrad] = calc_node_xrad(snapshotPath)
     try
         
         % average of all nodes

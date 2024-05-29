@@ -4,7 +4,7 @@ close all;
 
 measuredCol = 66;
 % calculate drift rate
-[driftRate, driftInfo] = CalculateDriftRate('Drift_Sample_ConvertLogFilePage 01\Drift_AdcData-1d.csv', measuredCol);
+[driftRate, driftInfo] = calcualte_drift_rate('Drift_Sample_ConvertLogFilePage 01\Drift_AdcData-1d.csv', measuredCol);
 
 % Drift rate of all log
 disp(['Drift start time: ', num2str(driftInfo.timeStart), ', Drift end time: ', num2str(driftInfo.timeEnd), ', Drift start ADC: ', ...

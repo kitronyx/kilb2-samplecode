@@ -4,12 +4,12 @@ close all;
 
 
 % Read 1-dimensional snapshot data.
-[row, col, data] = ReadSnapshot1DimensionData('SampleSnapshotData\20240227T170929_AdcData-1d.csv');
+[row, col, data] = read_snapshot_1d_data('SampleSnapshotData\20240227T170929_AdcData-1d.csv');
 
 data = str2double(data);
 
 % calculate sum, max, min, average value of all nodes
-[nodeSum, nodeMax,nodeMin,nodeAvg] = CalcNodeSumMaxMinAvg(data);
+[nodeSum, nodeMax,nodeMin,nodeAvg] = calc_node_sum_max_min_avg(data);
 
 % Sum of all nodes
 disp('sum of all nodes:');
@@ -26,7 +26,7 @@ disp(nodeAvg);
 
 
 % calculate Relative Standard deviation(RSD)
-[nodeStd, nodeRsd] = CalcNodeRsd(data);
+[nodeStd, nodeRsd] = clac_node_rsd(data);
 
 % Standard deviation of all nodes
 disp('Standard deviation of all nodes:');
@@ -35,7 +35,7 @@ disp(nodeStd);
 disp('%RSD of all nodes:');
 disp(nodeRsd);
 
-[nodeXrad] = CalcNodeXRAD(data);
+[nodeXrad] = calc_node_xrad(data);
 
 % %XRAD of all nodes
 disp('%XRAD of all nodes:');

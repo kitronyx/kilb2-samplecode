@@ -1,4 +1,4 @@
-function [nodeSum, nodeMax,nodeMin,nodeAvg] = CalcNodeSumMaxMinAvg(snapshotPath)
+function [nodeSum, nodeMax,nodeMin,nodeAvg] = calc_node_sum_max_min_avg(snapshotPath)
     try
         % Sum of all nodes
         nodeSum = sum(snapshotPath,2,"double");

@@ -1,4 +1,4 @@
-function [nodeStd, nodeRsd] = CalcNodeRsd(snapshotPath)
+function [nodeStd, nodeRsd] = clac_node_rsd(snapshotPath)
     try
         % calculate Relative Standard deviation(RSD)
         nodeStd = std(snapshotPath);

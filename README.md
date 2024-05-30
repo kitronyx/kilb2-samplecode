@@ -5,12 +5,12 @@
 # FolderTree
 ```
 
-├─MatLAB
-│  └─ReadKitronyxCsv
-│  ├─CalculateDriftRate
-│  ├─DataStatistics
-└─Python
-    └─ReadKitronyxCsv
+├─matlab
+│  └─read_kitronyx_csv
+│  ├─calculate_drift_rate
+│  ├─Ddata_statistics
+└─python
+    read_kitronyx_csv
 ```
 
 # MatLAB
@@ -23,5 +23,5 @@
 
   
 # Python
-### ReadKitronyxCsv
+### read_kitronyx_csv
     -. Collection of functions to read Kitronyx snapshot and log CSV files

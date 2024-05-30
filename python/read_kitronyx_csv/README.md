@@ -18,19 +18,19 @@ read_kitronyx_csv
 |   |   main.py
 |   |   ReadKitronyxCsv.py
 |   |
-|   +---SampleSnapshotData
-|   |       20240227T170929_AdcData-1d.csv
-|   |       20240227T170929_AdcData-2d.csv
-|   |       20240227T170929_ForceData-1d.csv
-|   |       20240227T170929_ForceData-2d.csv
-|   |       20240227T170929_snapshot-frame.jpg
-|   |       20240227T170929_snapshot-real_time_analyzer.jpg
+|   +---converted_log_data
+|   |       20240311T142511_AdcData-1d.csv
+|   |       20240311T142511_AdcData-2d.csv
+|   |       20240311T142511_ForceData-1d.csv
+|   |       20240311T142511_ForceData-2d.csv
 |   |
-|   \---Sample_ConvertLogFilePage 01
-|           20240311T142511_AdcData-1d.csv
-|           20240311T142511_AdcData-2d.csv
-|           20240311T142511_ForceData-1d.csv
-|           20240311T142511_ForceData-2d.csv
+|   \---snapshot_data
+|           20240227T170929_AdcData-1d.csv
+|           20240227T170929_AdcData-2d.csv
+|           20240227T170929_ForceData-1d.csv
+|           20240227T170929_ForceData-2d.csv
+|           20240227T170929_snapshot-frame.jpg
+|           20240227T170929_snapshot-real_time_analyzer.jpg
 |
 \---src
         ReadKitronyxCsv.py

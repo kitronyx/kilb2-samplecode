@@ -1,20 +1,20 @@
-# klib2-ReadKitronyxCsv
- GitHub repository for reading Kitronyx snapshot files and log files
-
-# Code Purpose
+# read_kitronyx_csv 
 Collection of sample code and source code in various programming languages for aggregating data from Snapshot and Log folders' converted CSV files using Kitornyx products
 
 
 # FolderTree
 ```
-ReadKitronyxCsv
+read_kitronyx_csv
 |   README.md
 |   README.pdf
 |
-\---SampleCode
++---res
+|       MatLABSampleResult.png
+|
++---sample
 |   |   main.m
-|   |   ReadConvertLogFile1DimensionData.m
-|   |   ReadSnapshot1DimensionData.m
+|   |   read_converted_logfile_1D_data.m
+|   |   read_snapshot_1d_data.m
 |   |
 |   +---SampleSnapshotData
 |   |       20240227T170929_AdcData-1d.csv
@@ -25,14 +25,11 @@ ReadKitronyxCsv
 |   |       20240227T170929_snapshot-real_time_analyzer.jpg
 |   |
 |   \---Sample_ConvertLogFilePage 01
-|   |           20240227T170929_AdcData-1d.csv
-|   |
-|   \---src
-|           ReadConvertLogFile1DimensionData.m
-|           ReadSnapshot1DimensionData.m
+|           20240227T170929_AdcData-1d.csv
 |
-\---res
-        MatLABSampleResult.png
+\---src
+        read_converted_logfile_1D_data.m
+        read_snapshot_1d_data.m
 
 ```
 

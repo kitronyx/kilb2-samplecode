@@ -1,30 +1,26 @@
-# kilb2-SampleCode
- GitHub repository for reading Kitronyx snapshot files and log files
-
-# Code Purpose
-Collection of sample code and source code in various programming languages for aggregating data from Snapshot and Log folders' converted CSV files using Kitornyx products
+# calcualte_drift_rate
+Here is a MATLAB function that reads Kitronyx log data and calculates the drift (rate of change) over time:
 
 # FolderTree
 ```
-CalculateDriftRate
-│  README.md
-│  README.pdf
-│
-├─res
-│      MatLABSampleResult.png
-│
-├─SampleCode
-│  │  CalcDriftRate.m
-│  │  main.m
-│  │  ReadConvertLogFile1DimensionData.m
-│  │
-│  └─Drift_Sample_ConvertLogFilePage 01
-│          Drift_AdcData-1d.csv
-│          Drift_AdcData-2d.csv
-│
-├─src
-│        CalcDriftRate.m
-│        ReadConvertLogFile1DimensionData.m
+calcualte_drift_rate
+|   README.md
+|   README.pdf
+|
++---res
+|       MatLABSampleResult.png
+|
++---sample
+|   |   calcualte_drift_rate.m
+|   |   main.m
+|   |   read_converted_logfile_1D_data.m
+|   |
+|   \---converted_log_data
+|           Drift_AdcData-1d.csv
+|           Drift_AdcData-2d.csv
+|
+\---src
+        calcualte_drift_rate.m
 ```
 
 
@@ -33,7 +29,7 @@ Version: R2023b Update 7 (23.2.0.2515942) 64bit January 30, 2024
 
 ## Code Description
 ```
-CalcDriftRate.m
+calcualte_drift_rate.m
     - MATLAB file containing a function to calculate drift rate for all log data
     - Returns [drift_rate, driftInfo] when given a drift value and drift information struct.
     - drift infomation struct format example:

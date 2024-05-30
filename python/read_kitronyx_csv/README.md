@@ -7,11 +7,14 @@ Collection of sample code and source code in various programming languages for a
 
 # FolderTree
 ```
-ReadKitronyxCsv
+read_kitronyx_csv
 |   README.md
 |   README.pdf
 |
-+---SampleCode
++---res
+|       PythonSampleResult.png
+|
++---sample
 |   |   main.py
 |   |   ReadKitronyxCsv.py
 |   |
@@ -23,19 +26,14 @@ ReadKitronyxCsv
 |   |       20240227T170929_snapshot-frame.jpg
 |   |       20240227T170929_snapshot-real_time_analyzer.jpg
 |   |
-|   +---Sample_ConvertLogFilePage 01
-|   |       20240311T142511_AdcData-1d.csv
-|   |       20240311T142511_AdcData-2d.csv
-|   |       20240311T142511_ForceData-1d.csv
-|   |       20240311T142511_ForceData-2d.csv
-|   |
-|   \---__pycache__
-+---src
-|       ReadKitronyxCsv.py
+|   \---Sample_ConvertLogFilePage 01
+|           20240311T142511_AdcData-1d.csv
+|           20240311T142511_AdcData-2d.csv
+|           20240311T142511_ForceData-1d.csv
+|           20240311T142511_ForceData-2d.csv
 |
-+---res
-|       MatLABSampleResult.png
-|       PythonSampleResult.png
+\---src
+        ReadKitronyxCsv.py
 ```
 # Python
 Program tools : Vs Code (Vesion 1.87.1)  
@@ -52,7 +50,7 @@ ReadKitronyxCsv.py
     - col: COL - number of rows
     - data: Matrix data of size ROW*COL
 
-    def ReadConvertLogFile1DimensionData(_path):
+    def ReadConvertedLogFile1DimensionData(_path):
     - Function to read log 1D files
     - Takes a 1D CSV path as a parameter and returns [row, col, data_dict]
     - row: ROW - number of columns

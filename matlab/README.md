@@ -26,14 +26,14 @@ Version: R2023b Update 7 (23.2.0.2515942) 64bit January 30, 2024
 
 ## Code Description
 ```
-ReadSnapshot1DimensionData.m
+read_snapshot_1d_data.m
     - MATLAB file containing a function to read snapshot 1D files
     - Returns [row, col, data] when given a 1D CSV path as a parameter.
     - row: ROW - number of columns
     - col: COL - number of rows
     - data: Cell array data (size ROW*COL)
 
-ReadConvertLogFile1DimensionData.m
+read_converted_logfile_1D_data.m
     - MATLAB file containing a function to read log 1D files
     - Returns [row, col, times, data] when given a 1D CSV path as a parameter.
     - row: ROW - number of columns

@@ -1,27 +1,22 @@
 # SampleCode
- Here is a GitHub repository containing sample code that utilizes Kitronyx's snapshots and log files.
+
+Here is a GitHub repository containing sample code that utilizes Kitronyx's snapshots and log files.
 
 
-# FolderTree
-```
+## Purpose
 
-├─matlab
-│  └─read_kitronyx_csv
-│  ├─calculate_drift_rate
-│  ├─Ddata_statistics
-└─python
-    read_kitronyx_csv
-```
+The purpose of this repository is to assist in analyzing data based on Kitronyx's snapshots and log files using different programming languages.
 
-# MatLAB
-### ReadKitronyxCsv
-    -. Collection of functions to read Kitronyx snapshot and log CSV files
-### CalculateDriftRate
-    -. Calculate drift rate for all log data
-### DataStatistics
-    -. Calculate sum, average, maximum, and minimum values for all nodes.
 
-  
-# Python
-### read_kitronyx_csv
-    -. Collection of functions to read Kitronyx snapshot and log CSV files
+## Projects
+
+### MatLAB
+- MatLAB [README.md](matlab/README.md)
+
+### Python
+- Python [README.md](python/README.md)  
+
+
+## License
+This software is licensed under the [MIT license](LICENSE), quoted below.
+Copyright 2014-2024 Kitronyx.Inc

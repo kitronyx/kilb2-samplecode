@@ -26,7 +26,7 @@ disp(nodeAvg);
 
 
 % calculate Relative Standard deviation(RSD)
-[nodeStd, nodeRsd] = clac_node_rsd(data);
+[nodeStd, nodeRsd] = calc_node_rsd(data);
 
 % Standard deviation of all nodes
 disp('Standard deviation of all nodes:');

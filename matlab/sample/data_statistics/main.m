@@ -1,42 +1,44 @@
-clc;
-clear ;
-close all;
+clc;        % Clear the command window.
 
+% Read 1-dimensional snapshot data from a CSV file.
+[row, col, data] = read_snapshot_1d_data('snapshot_data\20240227T170929_AdcData-1d.csv');
 
-% Read 1-dimensional snapshot data.
-[row, col, data] = read_snapshot_1d_data('SampleSnapshotData\20240227T170929_AdcData-1d.csv');
-
+% Convert the data from strings to double precision numbers.
 data = str2double(data);
 
-% calculate sum, max, min, average value of all nodes
-[nodeSum, nodeMax,nodeMin,nodeAvg] = calc_node_sum_max_min_avg(data);
+% Calculate sum, max, min, and average values of all nodes.
+[nodeSum, nodeMax, nodeMin, nodeAvg] = calc_node_sum_max_min_avg(data);
 
-% Sum of all nodes
-disp('sum of all nodes:');
+% Display the sum of all nodes.
+disp('Sum of all nodes:');
 disp(nodeSum);
-% max value of all nodes
-disp('max value of all nodes:');
+
+% Display the maximum value of all nodes.
+disp('Max value of all nodes:');
 disp(nodeMax);
-% min value of all nodes
-disp('min value of all nodes:');
+
+% Display the minimum value of all nodes.
+disp('Min value of all nodes:');
 disp(nodeMin);
-% average of all nodes
-disp('average of all nodes:');
+
+% Display the average value of all nodes.
+disp('Average of all nodes:');
 disp(nodeAvg);
 
-
-% calculate Relative Standard deviation(RSD)
+% Calculate the standard deviation and relative standard deviation (RSD) of all nodes.
 [nodeStd, nodeRsd] = calc_node_rsd(data);
 
-% Standard deviation of all nodes
+% Display the standard deviation of all nodes.
 disp('Standard deviation of all nodes:');
 disp(nodeStd);
-% Relative Standard deviation(RSD) of all nodes
+
+% Display the relative standard deviation (RSD) of all nodes.
 disp('%RSD of all nodes:');
 disp(nodeRsd);
 
+% Calculate the XRAD value for all nodes.
 [nodeXrad] = calc_node_xrad(data);
 
-% %XRAD of all nodes
+% Display the XRAD value of all nodes.
 disp('%XRAD of all nodes:');
 disp(nodeXrad);

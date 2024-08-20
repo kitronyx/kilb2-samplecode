@@ -1,6 +1,5 @@
-# read_kitronyx_csv 
+# Code Purpose
 Collection of sample code and source code in various programming languages for aggregating data from Snapshot and Log folders' converted CSV files using Kitornyx products
-
 
 # FolderTree
 ```
@@ -21,7 +20,7 @@ Collection of sample code and source code in various programming languages for a
     └─read_kitronyx_csv
 ```
 
-# MathLAB
+# MATLAB
 Version: R2023b Update 7 (23.2.0.2515942) 64bit January 30, 2024  
 
 ## Code Description

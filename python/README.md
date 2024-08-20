@@ -1,6 +1,3 @@
-# klib2-ReadKitronyxCsv
- GitHub repository for reading Kitronyx snapshot files and log files
-
 # Code Purpose
 Collection of sample code and source code in various programming languages for aggregating data from Snapshot and Log folders' converted CSV files using Kitornyx products
 
@@ -37,8 +34,9 @@ Collection of sample code and source code in various programming languages for a
             ReadKitronyxCsv.py
 ```
 # Python
-Program tools : Vs Code (Vesion 1.87.1)  
-Vs code Python Version: v2024.2.1  
+Program tools : Visual Studio Code 1.92.2 (user setup)  
+                Electron: 30.1.2  
+Visual Studio Code Python Version: v2024.2.1    
 
  ## Code Description
 

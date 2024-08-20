@@ -1,5 +1,5 @@
 # Code Purpose
-Collection of sample code and source code in various programming languages for aggregating data from Snapshot and Log folders' converted CSV files using Kitornyx products
+This repository contains a collection of sample code and source code in **Python** for aggregating data from Snapshot and Log folders' converted CSV files using Kitronyx products.
 
 
 # FolderTree
@@ -16,18 +16,8 @@ Collection of sample code and source code in various programming languages for a
 │      │  ReadKitronyxCsv.py
 │      │
 │      ├─converted_log_data
-│      │      20240311T142511_AdcData-1d.csv
-│      │      20240311T142511_AdcData-2d.csv
-│      │      20240311T142511_ForceData-1d.csv
-│      │      20240311T142511_ForceData-2d.csv
 │      │
 │      └─snapshot_data
-│              20240227T170929_AdcData-1d.csv
-│              20240227T170929_AdcData-2d.csv
-│              20240227T170929_ForceData-1d.csv
-│              20240227T170929_ForceData-2d.csv
-│              20240227T170929_snapshot-frame.jpg
-│              20240227T170929_snapshot-real_time_analyzer.jpg
 │
 └─src
     └─read_kitronyx_csv
@@ -37,6 +27,20 @@ Collection of sample code and source code in various programming languages for a
 Program tools : Visual Studio Code 1.92.2 (user setup)  
                 Electron: 30.1.2  
 Visual Studio Code Python Version: v2024.2.1    
+
+# How to Use Sample Code
+To run the sample code in the sample folder:
+
+1. Navigate to the Folder:
+        Go to the appropriate subfolder under sample/ where the main.py file is located   
+        (e.g., sample/read_kitronyx_csv, sample/calculate_drift_rate, etc.).
+2. Run the Main Script:
+    Execute the main.py file in that folder to run the sample code.   
+    This will demonstrate how to use the functions provided in the corresponding module.  
+```
+python main.py
+```
+This approach allows you to test and observe how each function processes the data from the provided CSV files in any specific context.
 
  ## Code Description
 

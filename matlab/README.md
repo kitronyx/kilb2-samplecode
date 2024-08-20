@@ -1,5 +1,5 @@
 # Code Purpose
-Collection of sample code and source code in various programming languages for aggregating data from Snapshot and Log folders' converted CSV files using Kitornyx products
+This repository contains a collection of sample code and source code in MATLAB for aggregating data from Snapshot and Log folders' converted CSV files using Kitronyx products.
 
 # FolderTree
 ```
@@ -22,6 +22,16 @@ Collection of sample code and source code in various programming languages for a
 
 # MATLAB
 Version: R2023b Update 7 (23.2.0.2515942) 64bit January 30, 2024  
+
+
+# How to Use Sample Code
+To use the sample code in each folder:
+
+1. Navigate to the desired sample folder (e.g., sample/calculate_drift_rate, sample/data_statistics, sample/read_kitronyx_csv).
+2. Run the ***'main.m'*** file in the folder to execute the corresponding sample code.  
+
+This will allow you to test and observe how each function processes the data.
+
 
 ## Code Description
 ```

@@ -1,4 +1,33 @@
 function [row, col, times, data] = read_converted_logfile_1D_data(path)
+%READ_CONVERTED_LOGFILE_1D_DATA Reads a logfile and extracts 1D data.
+%   READ_CONVERTED_LOGFILE_1D_DATA(PATH) reads a CSV logfile 
+%   specified by PATH and extracts the dimensions, timestamps, 
+%   and data matrix contained within the file.
+%
+%   Input:
+%   PATH - A string that specifies the path to the logfile.
+%
+%   Output:
+%   ROW    - The number of rows in the data matrix.
+%   COL    - The number of columns in the data matrix.
+%   TIMES  - A cell array containing the timestamps of the data entries.
+%   DATA   - A cell array containing the corresponding data matrices.
+%
+%   The function:
+%   1. Reads the first line to extract matrix dimensions.
+%   2. Parses each subsequent line to retrieve the timestamp and associated data.
+%   3. Stores the parsed data in the TIMES and DATA arrays.
+%   4. Sorts the TIMES array and reorders the DATA array accordingly.
+%
+%   If an error occurs while processing the file, the function returns
+%   empty arrays for ROW, COL, TIMES, and DATA.
+%
+%   Example:
+%   [row, col, times, data] = read_converted_logfile_1D_data('data.csv')
+%
+%   See also FOPEN, FGETL, STRSPLIT, STR2DOUBLE.
+%   Copyright 2014-2024 Kitronyx.Inc
+
     try
         % Open the file
         fid = fopen(path, 'r');
